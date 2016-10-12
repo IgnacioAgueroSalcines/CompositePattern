@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public class Directorio:Composite
+    class Directorio : Composite
     {
-        
+        public Directorio(string _nombre) : base(_nombre)
+        {
+        }
     }
 }

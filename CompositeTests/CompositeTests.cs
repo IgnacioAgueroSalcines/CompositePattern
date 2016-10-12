@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace Composite.Tests
 {
@@ -15,23 +16,25 @@ namespace Composite.Tests
         public void addComponenteTest()
         {
 
-            Componente composite = new Composite();
-            Componente composite2 = new Composite();
-            Componente composite3 = new Composite();
+            Archivo root = new Archivo("raiz");
+
+            //Componente composite = new Composite();
+            //Component composite2 = new Composite();
+            //Componente composite3 = new Composite();
 
 
-            composite3.addComponente(new Archivo());
-            composite3.addComponente(new Archivo());
+            //composite3.addComponente(new Archivo());
+            //composite3.addComponente(new Archivo());
 
-            composite2.addComponente(new Archivo());
-            composite2.addComponente(composite3);
+            //composite2.addComponente(new Archivo());
+            //composite2.addComponente(composite3);
 
-            composite.addComponente(new Archivo());
-            composite.addComponente(composite2);
+            //composite.addComponente(new Archivo());
+            //composite.addComponente(composite2);
 
-            int numeroHojas = composite.elementos() ;
+            //int numeroHojas = composite.elementos() ;
 
-            Assert.AreEqual(4,numeroHojas);
+            //Assert.AreEqual(4,numeroHojas);
             
 
             

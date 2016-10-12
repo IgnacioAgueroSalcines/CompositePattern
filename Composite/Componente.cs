@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public interface Componente
+    abstract class Componente
     {
-        void addComponente(Componente c);
-        void removeComponente(int id);
-        int elementos();
-    }
+        protected String nombre;
+
+        public Componente(String _nombre)
+        {
+            nombre = _nombre;
+        }
+
+        public abstract void addComponente(Componente c);
+        public abstract void removeComponente(Componente c);
+        public abstract int elementos();
+}
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public class Comprimido:Composite
+     class Comprimido : Composite
     {
+        public Comprimido(string _nombre) : base(_nombre)
+        {
+        }
     }
 }

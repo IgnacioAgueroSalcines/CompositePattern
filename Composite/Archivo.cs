@@ -6,25 +6,28 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public class Archivo: Componente
+     class Archivo: Componente
     {
-        public String nombre { get; set; }
+        public Archivo(string _nombre) : base(_nombre)
+        {
+        }
+
         public int tamaño { get; set; }
         public int id { get; set; }
 
-        public void addComponente(Componente c)
+        public override void addComponente(Componente c)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("No se puede añadir porque es una hoja");
         }
 
-        public int elementos()
+        public override void removeComponente(Componente c)
+        {
+            Console.WriteLine("No se puede borrar porque es una hoja");
+        }
+
+        public override int elementos()
         {
             return 1;
-        }
-
-        public void removeComponente(int id)
-        {
-            throw new NotImplementedException();
         }
     }
 }

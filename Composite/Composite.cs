@@ -6,24 +6,25 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public class Composite : Componente
+     class Composite : Componente
     {
-        public List<Componente> componentes { get; set; }
-        public int id { get; set; }
+        private List<Componente> componentes= new List<Componente>();
 
-        public Composite()
+        public Composite(string _nombre) : base(_nombre)
         {
-            componentes = new List<Componente>();
         }
 
-        public void addComponente(Componente c)
+        public override void addComponente(Componente c)
         {
             componentes.Add(c);
         }
 
-        
+        public override void removeComponente(Componente c)
+        {
+            componentes.Remove(c);
+        }
 
-        public int elementos()
+        public override int elementos()
         {
             int res = 0;
             for (int i = 0; i < componentes.ToArray().Length; i++)
@@ -31,14 +32,6 @@ namespace Composite
                 res += componentes[i].elementos();
             }
             return res;
-        }
-
-        public void removeComponente(int id)
-        {
-            for (int i = 0; i < componentes.ToArray().Length; i++)
-            {
-               
-            }
         }
     }
 }
