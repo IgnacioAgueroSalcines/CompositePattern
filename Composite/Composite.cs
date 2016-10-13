@@ -9,9 +9,11 @@ namespace Composite
      class Composite : Componente
     {
         private List<Componente> componentes= new List<Componente>();
+        private int tamano;
 
         public Composite(string _nombre) : base(_nombre)
         {
+            tamano = 1;
         }
 
         public override void addComponente(Componente c)
@@ -32,6 +34,26 @@ namespace Composite
                 res += componentes[i].elementos();
             }
             return res;
+        }
+
+        public override void renombrar(string s)
+        {
+            this.nombre = s;
+        }
+
+        public override string getNombre()
+        {
+            return this.nombre;
+        }
+
+        public override int getTamano()
+        {
+            int res = 0;
+            for (int i=0;i<componentes.ToArray().Length;i++)
+            {
+                res += componentes[i].getTamano();
+            }
+            return tamano+res;
         }
     }
 }

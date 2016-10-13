@@ -47,6 +47,7 @@
     <Compile Include="CompositeTests.cs" />
     <Compile Include="Comprimido.cs" />
     <Compile Include="Directorio.cs" />
+    <Compile Include="EnlaceDirecto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

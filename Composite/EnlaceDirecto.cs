@@ -6,18 +6,25 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-     class Archivo: Componente
+    class EnlaceDirecto:Componente
     {
-        public Archivo(string _nombre,int _tamano) : base(_nombre)
-        {
-            tamano = _tamano;
-        }
+        public int tamano;//medido en Kb
 
-        public int tamano { get; set; }
+        public EnlaceDirecto(string _nombre,Componente c) : base(_nombre)
+        {
+            tamano = 1;
+            this.nombre = c.getNombre();
+        }
 
         public override void addComponente(Componente c)
         {
             Console.WriteLine("No se puede añadir porque es una hoja");
+        }
+
+        public override int elementos()
+        {
+            Console.WriteLine("No se puede contar elementos porque es un enlace");
+            return 0;
         }
 
         public override void removeComponente(Componente c)
@@ -25,14 +32,9 @@ namespace Composite
             Console.WriteLine("No se puede borrar porque es una hoja");
         }
 
-        public override int elementos()
-        {
-            return 1;
-        }
-
         public override void renombrar(string s)
         {
-            this.nombre = s;
+            Console.WriteLine("No se puede renombrar un enlace directo");
         }
 
         public override string getNombre()

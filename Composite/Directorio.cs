@@ -8,8 +8,11 @@ namespace Composite
 {
     class Directorio : Composite
     {
+        public int tamano;//medido en Kb
+
         public Directorio(string _nombre) : base(_nombre)
         {
+            tamano = 1;
         }
     }
 }

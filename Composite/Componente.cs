@@ -18,5 +18,8 @@ namespace Composite
         public abstract void addComponente(Componente c);
         public abstract void removeComponente(Componente c);
         public abstract int elementos();
+        public abstract void renombrar(String s);
+        public abstract String getNombre();
+        public abstract int getTamano();
 }
 }
