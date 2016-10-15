@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public abstract class Composite : ElementoConsistente
+    public class Composite : ElementoConsistente
     {
-        protected List<Componente> componentes= new List<Componente>();
+        private List<Componente> componentes= new List<Componente>();
         private int tamano;
 
         public Composite(string _nombre) : base(_nombre)
@@ -46,7 +46,14 @@ namespace Composite
             return this.nombre;
         }
 
-        public abstract override int getTamano();
-        
+        public override int getTamano()
+        {
+            int res = 0;
+            for (int i=0;i<componentes.ToArray().Length;i++)
+            {
+                res += componentes[i].getTamano();
+            }
+            return tamano+res;
+        }
     }
 }

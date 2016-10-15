@@ -14,15 +14,7 @@ namespace Composite
         {
             tamano = 1;
         }
+        
 
-        public override int getTamano()
-        {
-            int res = 0;
-            for (int i = 0; i < componentes.ToArray().Length; i++)
-            {
-                res += componentes[i].getTamano();
-            }
-            return tamano + res;
-        }
     }
 }

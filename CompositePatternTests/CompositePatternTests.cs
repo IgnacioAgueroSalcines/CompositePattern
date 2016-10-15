@@ -19,9 +19,9 @@ namespace Composite.Tests
         public void startUp()
         {
             borrar = new Archivo("hoja4", 5);
-            composite = new Composite("root");
-            Composite composite2 = new Composite("dir");
-            Composite composite3 = new Composite("comp");
+            composite = new Directorio("root");
+            Composite composite2 = new Directorio("dir");
+            Composite composite3 = new Comprimido("comp");
 
 
             composite3.addComponente(new Archivo("hoja1", 5));
@@ -63,7 +63,7 @@ namespace Composite.Tests
         {
 
             int res = composite.getTamano();
-            Assert.AreEqual(24, res);
+            Assert.AreEqual(16, res);
 
 
         }
