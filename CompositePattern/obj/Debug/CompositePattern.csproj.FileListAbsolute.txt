@@ -1,0 +1,5 @@
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePattern\bin\Debug\CompositePattern.dll
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePattern\bin\Debug\CompositePattern.pdb
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePattern\obj\Debug\CompositePattern.csprojResolveAssemblyReference.cache
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePattern\obj\Debug\CompositePattern.dll
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePattern\obj\Debug\CompositePattern.pdb

@@ -5,31 +5,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace Composite.Tests
 {
     [TestClass()]
-    public class CompositeTests
+    public class CompositePatternTests
     {
-        Componente composite;
+        Composite composite;
         Archivo borrar;
 
         [TestInitialize()]
         public void startUp()
         {
-            borrar = new Archivo("hoja4",5);
+            borrar = new Archivo("hoja4", 5);
             composite = new Composite("root");
-            Componente composite2 = new Composite("dir");
-            Componente composite3 = new Composite("comp");
+            Composite composite2 = new Composite("dir");
+            Composite composite3 = new Composite("comp");
 
 
-            composite3.addComponente(new Archivo("hoja1",5));
-            composite3.addComponente(new Archivo("hoja2",5));
+            composite3.addComponente(new Archivo("hoja1", 5));
+            composite3.addComponente(new Archivo("hoja2", 5));
 
-            composite2.addComponente(new Archivo("hoja3",5));
+            composite2.addComponente(new Archivo("hoja3", 5));
             composite2.addComponente(composite3);
 
-            EnlaceDirecto e = new EnlaceDirecto("",composite2);
+            EnlaceDirecto e = new EnlaceDirecto("", composite2);
 
             composite.addComponente(borrar);
             composite.addComponente(composite2);
@@ -42,9 +43,9 @@ namespace Composite.Tests
         public void addComponenteTest()
         {
 
-            int numeroHojas = composite.elementos() ;
+            int numeroHojas = composite.elementos();
 
-            Assert.AreEqual(4,numeroHojas);
+            Assert.AreEqual(4, numeroHojas);
         }
 
         [TestMethod()]
@@ -67,6 +68,14 @@ namespace Composite.Tests
 
         }
 
+        [TestMethod()]
+        public void elementosTest()
+        {
 
+            int res = composite.elementos();
+            Assert.AreEqual(4, res);
+
+
+        }
     }
 }

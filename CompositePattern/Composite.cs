@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-     class Composite : ElementoConsistente
+    public class Composite : ElementoConsistente
     {
         private List<Componente> componentes= new List<Componente>();
         private int tamano;

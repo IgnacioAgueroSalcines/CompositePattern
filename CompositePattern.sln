@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{9CEB40FD-0291-4624-A0FC-AEE6A7D33DC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{D5BB2499-FD88-49CE-8EF7-66566C5CE5F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePatternTests", "CompositePatternTests\CompositePatternTests.csproj", "{9947F85C-F955-4BF0-A7A0-A6FBA58A8E96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9CEB40FD-0291-4624-A0FC-AEE6A7D33DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CEB40FD-0291-4624-A0FC-AEE6A7D33DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CEB40FD-0291-4624-A0FC-AEE6A7D33DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CEB40FD-0291-4624-A0FC-AEE6A7D33DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BB2499-FD88-49CE-8EF7-66566C5CE5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BB2499-FD88-49CE-8EF7-66566C5CE5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BB2499-FD88-49CE-8EF7-66566C5CE5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BB2499-FD88-49CE-8EF7-66566C5CE5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9947F85C-F955-4BF0-A7A0-A6FBA58A8E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9947F85C-F955-4BF0-A7A0-A6FBA58A8E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9947F85C-F955-4BF0-A7A0-A6FBA58A8E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9947F85C-F955-4BF0-A7A0-A6FBA58A8E96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

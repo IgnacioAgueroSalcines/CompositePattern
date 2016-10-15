@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    class Directorio : Composite
+   public class Directorio : Composite
     {
         public int tamano;//medido en Kb
 

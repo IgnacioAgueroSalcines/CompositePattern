@@ -2,7 +2,7 @@
 
 namespace Composite
 {
-     class Archivo: ElementoConsistente
+    public class Archivo: ElementoConsistente
     {
         public Archivo(string _nombre,int _tamano) : base(_nombre)
         {

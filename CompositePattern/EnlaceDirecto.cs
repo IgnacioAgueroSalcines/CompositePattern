@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    class EnlaceDirecto:Componente
+   public class EnlaceDirecto:Componente
     {
         public int tamano;//medido en Kb
         private ElementoConsistente elemento;

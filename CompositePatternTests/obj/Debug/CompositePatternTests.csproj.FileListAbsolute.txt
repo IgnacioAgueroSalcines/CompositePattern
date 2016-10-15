@@ -1,0 +1,9 @@
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\bin\Debug\CompositePatternTests.dll
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\bin\Debug\CompositePatternTests.pdb
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\bin\Debug\CompositePattern.dll
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\bin\Debug\CompositePattern.pdb
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\obj\Debug\CompositePatternTests.csprojResolveAssemblyReference.cache
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\obj\Debug\CompositePatternTests.dll
+D:\cuarto\1cuatri\diseñoSoftware\practicas\practica2\CompositePattern\CompositePatternTests\obj\Debug\CompositePatternTests.pdb

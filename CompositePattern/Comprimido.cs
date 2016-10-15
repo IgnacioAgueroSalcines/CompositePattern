@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    class Directorio : Composite
+     public class Comprimido : Composite
     {
-        public int tamano;//medido en Kb
-
-        public Directorio(string _nombre) : base(_nombre)
+        public Comprimido(string _nombre) : base(_nombre)
         {
-            tamano = 1;
         }
-        
-
     }
 }
